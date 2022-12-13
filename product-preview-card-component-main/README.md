@@ -12,4 +12,4 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@swkarimi](https://www.frontendmentor.io/profile/swkarimi)
