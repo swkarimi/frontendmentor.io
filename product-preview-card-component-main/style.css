@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark-cyan: hsl(158, 36%, 37%);
+  --clr-very-dark-cyan: hsl(159, 36%, 27%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-very-dark-blue: hsl(212, 21%, 14%);
+  --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+body {
+  padding: 1.75rem 1rem;
+  background-color: var(--clr-cream);
+}
+
+.container {
+  background-color: var(--clr-white);
+  border-radius: 0.5rem;
+}
+
+.card-img img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-info {
+  padding: 1.25rem 1.5rem;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-info .cat {
+  color: var(--clr-dark-grayish-blue);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.card-info .product-name {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 0.75rem 0;
+  color: var(--clr-very-dark-blue);
+}
+
+.card-info .desc {
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--clr-dark-grayish-blue);
+}
+
+.card-info .prices {
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prices .price-off {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-dark-cyan);
+}
+
+.prices .price-real {
+  text-decoration: line-through;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--clr-dark-grayish-blue);
+}
+
+.card-info .btn {
+  background-color: var(--clr-dark-cyan);
+  color: var(--clr-cream);
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.card-info .btn img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.card-info .btn span {
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.card-info .btn:focus {
+  outline: 0;
+}
