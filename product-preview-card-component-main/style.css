@@ -116,3 +116,38 @@ body {
 .card-info .btn:focus {
   outline: 0;
 }
+@media (min-width: 376px) {
+  body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 600px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-img img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .card-info {
+    flex: 0 0 300px;
+    padding: 2rem;
+  }
+
+  .card-info .product-name {
+    padding: 1.5rem 0;
+  }
+  .card-info .prices {
+    padding: 1.5rem 0;
+  }
+}
