@@ -1,12 +1,12 @@
-# product preview card component main
+# Frontend Mentor - product preview card component main
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)
 
-### Screenshot
+## Screenshot
 
 ![](./screenshot.png)
 
-### Live Preview:
+## Live Preview:
 
 [link](https://fe001m.netlify.app/)
 
