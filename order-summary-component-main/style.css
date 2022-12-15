@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--clr-pale-blue);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: var(--clr-white);
+  width: 450px;
+  height: 700px;
+  border-radius: 1rem;
+}
+
+img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+section {
+  margin: 2.5rem 3rem;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: var(--clr-dark-blue);
+  font-family: inherit;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+p.desc {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--clr-desaturated-blue);
+  padding: 1.5rem;
+}
+
+.plan {
+  padding: 1.5rem;
+  background-color: var(--clr-very-pale-blue);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.plan-info-a .name {
+  color: var(--clr-dark-blue);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.plan-info-a .price {
+  color: var(--clr-desaturated-blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  color: var(--clr-bright-blue);
+  font-size: 0.875rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsla(245, 75%, 52%, 0.7);
+  text-decoration: none;
+}
+
+a.cancel {
+  text-decoration: none;
+  color: var(--clr-desaturated-blue);
+}
+
+a.cancel:hover {
+  color: var(--clr-dark-blue);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+
+  background-color: var(--clr-bright-blue);
+  color: var(--clr-white);
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.75rem;
+
+  box-shadow: 0 1.5rem 1rem hsl(245, 75%, 52%, 0.15);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
