@@ -21,6 +21,7 @@ body {
 }
 
 main {
+  min-width: 275px;
   width: 87.2vw;
   margin: 6.4vw auto;
   font-family: "Lexend Deca", sans-serif;
@@ -88,4 +89,40 @@ a {
 a:hover {
   background-color: transparent;
   color: var(--clr-very-light-gray);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  main {
+    max-width: max(920px, 63.9vw);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 500px;
+  }
+
+  .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .car {
+    position: relative;
+  }
+
+  a {
+    padding: 0.875rem 1.5rem;
+    position: absolute;
+    bottom: 3rem;
+  }
 }
