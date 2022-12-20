@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  background-color: var(--clr-dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bg-img {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+img.bg-top {
+  position: absolute;
+  top: -2vh;
+  left: 48vw;
+  transform: translate(-100%, -50%);
+}
+
+img.bg-bottom {
+  position: absolute;
+  top: 121vh;
+  left: 48vw;
+  transform: translate(0, -50%);
+}
+
+main {
+  background-color: white;
+  width: 87.2vw;
+  max-width: 350px;
+  border-radius: 1rem;
+  font-family: "Kumbh Sans";
+  box-shadow: 0 4rem 4rem hsla(0, 0%, 0%, 0.15);
+}
+
+.header-img {
+  height: 140px;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.profile-img {
+  position: relative;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile {
+  margin: 4.5rem 0 1rem;
+  text-align: center;
+}
+
+.profile .name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-very-dark-desaturated-blue);
+  margin-right: 0.25rem;
+}
+
+.profile .age {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--clr-dark-grayish-blue);
+}
+
+.profile .city {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--clr-dark-grayish-blue);
+  padding: 0.5rem 0;
+}
+
+.line {
+  background-color: var(--clr-dark-gray);
+  width: 100%;
+  height: 1px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem 0;
+}
+
+ul li span {
+  display: block;
+  text-align: center;
+}
+
+ul li span.val {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-very-dark-desaturated-blue);
+}
+ul li span.lbl {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  padding-top: 0.25rem;
+  color: var(--clr-dark-gray);
+}
