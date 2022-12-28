@@ -118,7 +118,7 @@ main {
   margin: 0.25rem 0;
 }
 
-@media ((min-height: 640px) and (min-width: 1024px)) {
+@media ((min-height: 640px) and (min-width: 768px)) {
   body {
     padding: 0;
     height: 100vh;
@@ -130,7 +130,7 @@ main {
     transform: translateY(-50%);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   main {
     max-width: 634px;
     display: grid;
