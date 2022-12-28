@@ -16,7 +16,7 @@
 }
 
 body {
-  padding: 71px 0 1rem;
+  padding: 71px 0;
   background-color: var(--clr-light-gray);
 }
 
@@ -118,10 +118,19 @@ main {
   margin: 0.25rem 0;
 }
 
-@media (min-width: 768px) {
+@media ((min-height: 640px) and (min-width: 1024px)) {
   body {
-    padding-top: 163px;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
   }
+  main {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 1024px) {
   main {
     max-width: 634px;
     display: grid;
