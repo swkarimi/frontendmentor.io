@@ -176,7 +176,8 @@ main {
     font-size: 14px;
     background-image: url("./images/bg-desktop.png");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: bottom;
+    background-size: 100% 50%;
     height: 100vh;
   }
 
