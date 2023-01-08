@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-g1: hsl(6, 100%, 80%);
+  --clr-g2: hsl(335, 100%, 65%);
+  --clr-pale-blue: hsl(243, 100%, 93%);
+  --clr-grayish-blue: hsl(229, 7%, 55%);
+  --clr-dark-blue: hsl(228, 56%, 26%);
+  --clr-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+  background-color: var(--clr-very-dark-blue);
+  padding: 8rem 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-image: url("./images/bg-mobile.png");
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.box1 {
+  width: 100%;
+  height: 200px;
+  background-color: var(--clr-dark-blue);
+  padding: 2.5rem;
+  border-radius: 1rem 7rem 1rem 1rem / 1rem 5rem 1rem 1rem;
+  box-shadow: 0 2rem 3rem hsla(0, 0%, 0%, 0.2);
+}
+
+.box1-inside {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.box1-inside-logo img {
+  vertical-align: middle;
+}
+
+.box1-inside-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box1-inside-icons .icon {
+  background-color: var(--clr-very-dark-blue);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  width: 100%;
+  height: 160px;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-pale-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 3rem hsla(0, 0%, 0%, 0.2);
+
+  position: relative;
+}
+
+.box2 p.text {
+  text-align: center;
+}
+
+.box2 p.text span {
+  font-weight: 700;
+}
+
+.box2 .progress-bar {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  background-color: #151d4b;
+  border-radius: 10px;
+}
+
+.progress-bar-line {
+  background: linear-gradient(90deg, var(--clr-g1), var(--clr-g2));
+  height: 16px;
+  width: 74%;
+  border-radius: 10px;
+
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.progress-bar-line .ball {
+  background-color: var(--clr-pale-blue);
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+
+  position: relative;
+  top: 2px;
+  left: calc(100% - 14px);
+  cursor: pointer;
+}
+
+.box2 span.start {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top: 10px;
+}
+.box2 span.end {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top: 10px;
+  left: calc(100% - 80px);
+}
+
+.flo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 72px;
+  background-color: #fff;
+  border-radius: 0.75rem;
+
+  transform: translate(-50%, 50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flo p span:nth-child(1) {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+}
+
+.flo p span:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: gray;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: calc((100vh - 230px) / 2) 0 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+  }
+
+  main {
+    margin: 0 auto;
+    grid-template-columns: 24.3vw 37.5vw;
+    gap: 2rem;
+    width: fit-content;
+    align-items: flex-end;
+  }
+
+  .box2 {
+    height: 155px;
+    padding: 2.5rem;
+  }
+
+  .box2 p.text {
+    text-align: left;
+  }
+
+  .flo {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 222px);
+    width: 180px;
+    height: 72px;
+    background-color: #fff;
+    border-radius: 0.75rem 0.75rem 0 0.75rem;
+
+    transform: translate(0, -65%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flo::after {
+    content: "";
+    border-top: 12px solid white;
+    border-right: 12px solid white;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+  }
+}
