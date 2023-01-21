@@ -9,6 +9,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Frontend Mentor | Clipboard landing page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,9 +28,9 @@
 
     <main class="center">
       <section class="mb9p75">
-        <div>
+        <div class="w700">
           <h1>A history of everything you copy</h1>
-          <p>
+          <p class="p1">
             Clipboard allows you to track and organize everything you copy.
             Instantly access your clipboard on all your devices.
           </p>
@@ -35,9 +42,9 @@
       </section>
 
       <section>
-        <div class="center mb4">
+        <div class="center mb4 w700">
           <h2>Keep track of your snippets</h2>
-          <p>
+          <p class="p2">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
@@ -46,16 +53,16 @@
       </section>
 
       <section>
-        <div class="mb11p5">
+        <div class="mb11p5 grid1">
           <img
             class="img-w100 mb3p75"
             src="./images/image-computer.png"
             alt=""
           />
-          <div>
+          <div class="left">
             <div class="center">
               <h3>Quick Search</h3>
-              <p>
+              <p class="p2">
                 Easily search your snippets by content, category, web address,
                 application, and more.
               </p>
@@ -63,12 +70,14 @@
 
             <div class="center">
               <h3>iCloud Sync</h3>
-              <p>Instantly saves and syncs snippets across all your devices.</p>
+              <p class="p2">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
             </div>
 
             <div class="center">
               <h3>Complete History</h3>
-              <p>
+              <p class="p2">
                 Retrieve any snippets from the first moment you started using
                 the app.
               </p>
@@ -78,9 +87,9 @@
       </section>
 
       <section>
-        <div class="center mb4p5">
+        <div class="center mb4p5 w700">
           <h2 style="margin-bottom: 0.75rem">Access Clipboard Anywhere</h2>
-          <p>
+          <p class="p2">
             Whether you’re on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
           </p>
@@ -89,14 +98,14 @@
 
       <section>
         <div class="mb6p75">
-          <img src="./images/image-devices.png" alt="" class="img-w100" />
+          <img src="./images/image-devices.png" alt="" class="img-w56" />
         </div>
       </section>
 
       <section>
-        <div class="center mb5p5">
+        <div class="center mb5p5 w700">
           <h2 style="margin-bottom: 0.75rem">Supercharge your workflow</h2>
-          <p>We’ve got the tools to boost your productivity.</p>
+          <p class="p2">We’ve got the tools to boost your productivity.</p>
         </div>
       </section>
 
@@ -105,7 +114,7 @@
           <div class="center">
             <img src="./images/icon-blacklist.svg" alt="" class="mb2p25" />
             <h3>Create blacklists</h3>
-            <p>
+            <p class="p2">
               Ensure sensitive information never makes its way to your clipboard
               by excluding certain sources.
             </p>
@@ -114,7 +123,7 @@
           <div class="center">
             <img src="./images/icon-text.svg" alt="" class="mb2p25" />
             <h3>Plain text snippets</h3>
-            <p>
+            <p class="p2">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
@@ -122,7 +131,7 @@
           <div class="center">
             <img class="mb2p25" src="./images/icon-preview.svg" alt="" />
             <h3>Sneak preview</h3>
-            <p>
+            <p class="p2">
               Quick preview of all snippets on your Clipboard for easy access.
             </p>
           </div>
@@ -150,9 +159,9 @@
       </section>
 
       <section>
-        <div class="center mb10p25">
+        <div class="center mb10p25 w700">
           <h2>Clipboard for iOS and Mac OS</h2>
-          <p>
+          <p class="p2">
             Available for free on the App Store. Download for Mac or iOS, sync
             with iCloud and you’re ready to start adding to your clipboard.
           </p>
@@ -169,7 +178,7 @@
     <footer>
       <div class="footer-inside">
         <div class="menu">
-          <img src="./images/logo.svg" alt="logo" />
+          <img class="span-r2" src="./images/logo.svg" alt="logo" />
           <a href="#"><h3>FAQs</h3></a>
           <a href="#"><h3>Contact Us</h3> </a>
           <a href="#"><h3>Privacy Policy</h3></a>
@@ -178,13 +187,18 @@
         </div>
         <div class="social-link">
           <a href="#" aria-label="facebook">
-            <img src="./images/icon-facebook.svg" alt />
+            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            <!-- <img src="./images/icon-facebook.svg" alt /> -->
           </a>
           <a href="#" aria-label="twitter">
-            <img src="./images/icon-twitter.svg" alt />
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+
+            <!-- <img src="./images/icon-twitter.svg" alt /> -->
           </a>
           <a href="#" aria-label="instagram">
-            <img src="./images/icon-instagram.svg" alt />
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+
+            <!-- <img src="./images/icon-instagram.svg" alt /> -->
           </a>
         </div>
       </div>
